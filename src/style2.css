@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Oswald');
-
+body {
+    font-family: Oswald;
+    font-size: 14px;
+}
+h1 {
+    font-family: Bungee Inline;
+    font-size: 46px;
+    font-weight: lighter;
+}
 /* Use the 'Oswald' font family at 14px throughout the body of the document. */
 nav {font-family: sans-serif; font-size: 10px;}
 
@@ -11,17 +19,32 @@ nav {font-family: sans-serif; font-size: 10px;}
 section {margin-bottom: 20px; padding: 10px;}
 
 /* Show each of the section headings of the menu (e.g. "Starters") in uppercase. */
-h2 {margin-top: 0;}
+h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+}
 
 /* Make the name of each menu item appear in bold in a 16px size. */
-dt {display: inline;}
+dt {
+    display: inline;
+    font-weight: bold;
+    font-size: 16px;
+}
 /* Make a comma appear after the name of each menu item (before the description) */
 
 dd {display: inline; margin: 0;}
 dd::after {content: " "; display: block; clear: both; margin-bottom: 15px;}
+dt::after {
+    content:",";
+}
 
 .price {float: right; padding: 0 0 35px 20px;}
 
 /* Right-align the text of the address/footer */
-
+footer {
+    text-align: right;
+}
 /* draw a 2px black border around the starters and desserts sections of the menu */
+#starters,#desserts {
+    border: 2px black solid
+}
